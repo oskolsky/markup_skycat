@@ -1,0 +1,6 @@
+# RubyMine
+.idea
+
+# Project file
+config.txt
+*.log
