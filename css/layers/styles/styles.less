@@ -1,0 +1,135 @@
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body {
+  background: @base-bg;
+  color: @base-color;
+  font-weight: 400;
+  font-family: @base-font-family;
+  font-size: @base-font-size;
+  line-height: @base-line-height;
+  min-width: 960px;
+}
+
+hr {
+  margin: 0;
+  border: 0;
+}
+
+img {-ms-interpolation-mode: bicubic;}
+
+menu, ol, ul {list-style: none;}
+
+// LINKS
+// ----------------------------------------------------------------------------------------------------
+a {
+  display: inline-block;
+  color: @link-color;
+}
+a:hover  {color: @link-color-hover;}
+a:active {color: @link-color-active;}
+
+// HEADERS
+// ----------------------------------------------------------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: @header-font-family;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1;
+}
+h2 {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+h3 {
+  font-size: 3rem;
+  line-height: 1.125;
+}
+h4 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+}
+h5 {
+  font-size: 2rem;
+  line-height: 1.375;
+}
+h6 {
+  font-size: @base-font-size;
+  line-height: @base-line-height;
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a,
+h1 > .a.__inner > span,
+h2 > .a.__inner > span,
+h3 > .a.__inner > span,
+h4 > .a.__inner > span,
+h5 > .a.__inner > span,
+h6 > .a.__inner > span {text-decoration: none;}
+
+// FORM ELEMENTS
+// ----------------------------------------------------------------------------------------------------
+button, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  outline-style: none;
+  font-family: inherit;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+input::-ms-clear {display: none;}
+
+textarea {resize: none;}
+
+// PROPERTIES
+// ----------------------------------------------------------------------------------------------------
+// Font-style
+.fs-i {font-style: italic;}
+
+// Font-weight
+.fw-100 {font-weight: 100;} // Ultra-Light
+.fw-200 {font-weight: 200;} // Light
+.fw-300 {font-weight: 300;} // Book
+.fw-400 {font-weight: 400;} // Normal
+.fw-500 {font-weight: 500;} // Medium
+.fw-600 {font-weight: 600;} // Semi-Bold
+.fw-700 {font-weight: 700;} // Bold
+.fw-800 {font-weight: 800;} // Extra-Bold
+.fw-900 {font-weight: 900;} // Ultra-Bold
+
+// Vertical-align
+.va-bl {vertical-align: baseline;}
+.va-t  {vertical-align: top;}
+.va-m  {vertical-align: middle;}
+.va-b  {vertical-align: bottom;}
+
+// TEXT
+// ----------------------------------------------------------------------------------------------------
+// Font-size
+.tx.__small {font-size: @font-size-small;}
+.tx.__large {font-size: @font-size-large;}
+
+// Text-align
+.tx.__left   {text-align: left;}
+.tx.__center {text-align: center;}
+.tx.__right  {text-align: right;}
+
+// Text-transform
+.tx.__lower {text-transform: lowercase;}
+.tx.__upper {text-transform: uppercase;}

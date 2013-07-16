@@ -1,0 +1,84 @@
+// LESS
+// http://lesscss.org/
+// ----------------------------------------------------------------------------------------------------
+
+// VARIABLES
+@base-bg: #fff;
+@base-color: #000;
+@base-font-size: 1.5rem;
+@base-line-height: 1.5;
+@base-font-family: "PT Sans", Helvetica, Arial, sans-serif;
+
+// Headers
+@header-font-family: "PT Serif", Times, "Times New Roman", serif;
+
+// Links
+@link-color: #0000cd;
+@link-color-hover: #ccc;
+@link-color-active: darken(@link-color-hover, 10%);
+
+// Text
+@font-size-small: 1rem;
+@font-size-large: 2rem;
+
+// Forms
+@form-el-bg: #fff;
+@form-el-border-color: #ccc;
+@form-el-border-style: 1px solid @form-el-border-color;
+@form-el-color: #000;
+@form-el-font-size: 1.5rem;
+@form-el-line-height: 2rem;
+@form-el-valid-true-color: #008000;
+@form-el-valid-false-color: #f00;
+@form-label-color: #999;
+@form-label-font-size: 1.5rem;
+@form-label-line-height: 2rem;
+
+// MIXINS
+.border-box {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.translate (@x; @y) {
+  -webkit-transform: translate(@x, @y);
+     -moz-transform: translate(@x, @y);
+      -ms-transform: translate(@x, @y);
+       -o-transform: translate(@x, @y);
+          transform: translate(@x, @y);
+}
+
+// Forms
+.form-el-border-radius (@radius: .2em) {border-radius: @radius;}
+
+// FONTS
+// http://www.google.com/webfonts
+// ----------------------------------------------------------------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic);
+
+// IMPORT
+// ----------------------------------------------------------------------------------------------------
+@import "/css/vendor/reset.css" all;
+@import "/css/vendor/arcticmodal/jquery.arcticmodal-0.3.css" all;
+
+@import "/css/layers/base/layout" all;
+@import "/css/layers/base/styles" all;
+@import "/css/layers/base/dialogs" all;
+@import "/css/layers/base/links" all;
+@import "/css/layers/base/forms" all;
+
+@import "/css/layers/styles/styles" all;
+@import "/css/layers/styles/content" all;
+
+@import "/css/layers/project/project" all;
+
+// Media
+@import "/css/media/print" print;
+
+// Responsive
+@import "/css/media/media" all;
+@import "/css/media/phone" all and (max-width: 480px);
+@import "/css/media/tablet" all and (min-width: 481px) and (max-width: 960px);
+@import "/css/media/desktop" all and (min-width: 961px);

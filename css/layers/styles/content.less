@@ -1,0 +1,149 @@
+// AURUM CONTENT
+
+// CONTENT STYLES
+// ----------------------------------------------------------------------------------------------------
+.cnt > blockquote,
+.cnt > dl,
+.cnt > ol,
+.cnt > ul,
+.cnt > figure,
+.cnt > img,
+.cnt > p,
+.cnt > pre,
+.cnt > table {margin-bottom: 2rem;}
+
+.cnt > *:last-child {margin-bottom: 0;}
+
+// Links, if necessary
+// .cnt a        {color: blue;}
+// .cnt a:hover  {color: silver;}
+// .cnt a:active {color: gray;}
+
+// Blockquote
+.cnt > blockquote {
+  padding: 2rem;
+  border: 1px solid #eee;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+// Lists
+.cnt > dl dl {margin-top: 1rem;}
+.cnt > dl dt {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.cnt > dl dd {margin-left: 4rem;}
+
+.cnt > ol       {list-style-type: decimal;}
+.cnt > ol ol    {list-style-type: lower-alpha;}
+.cnt > ol ol ol {list-style-type: lower-roman;}
+
+.cnt > ul       {list-style-type: disc;}
+.cnt > ul ul    {list-style-type: circle;}
+.cnt > ul ul ul {list-style-type: square;}
+
+.cnt > ol li,
+.cnt > ul li {margin: 0 0 1rem 4rem;}
+
+.cnt > ol li ol,
+.cnt > ul li ul {margin-top: 1rem;}
+
+// Headers
+.cnt > h1,
+.cnt > h2,
+.cnt > h3,
+.cnt > h4,
+.cnt > h5,
+.cnt > h6 {margin: 4rem 0 2rem;}
+
+.cnt > h1:first-child,
+.cnt > h2:first-child,
+.cnt > h3:first-child,
+.cnt > h4:first-child,
+.cnt > h5:first-child,
+.cnt > h6:first-child {margin-top: 0;}
+
+// Figure
+.cnt > figure > figcaption {
+  color: #999;
+  font-style: italic;
+}
+
+// Images
+.cnt img {
+  max-width: 100%;
+  height: auto !important;
+  vertical-align: top;
+}
+.cnt > img {display: block;}
+.cnt > p > img {
+  float: left;
+  margin-right: 2rem;
+}
+
+// Paragraphs
+.cnt > p:before,
+.cnt > p:after {
+  display: table;
+  content: "";
+}
+.cnt > p:after {clear: both;}
+
+// Pre > Code
+.cnt > pre {
+  padding: 2rem;
+  background: #eee;
+  border: 1px dotted #ccc;
+  white-space: normal;
+}
+.cnt > pre > code {
+  display: block;
+  padding: 0;
+  font-size: 1.5rem;
+  white-space: pre-wrap;
+}
+
+// Quote
+.cnt q {
+  font-style: italic;
+  quotes: "\00ab" "\00bb";
+}
+.cnt q:before {content: open-quote;}
+.cnt q:after  {content: close-quote;}
+
+// Small
+.cnt small {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+// Sup, sub
+.cnt sub,
+.cnt sup {
+  font-size: 1.125rem;
+  line-height: 1;
+}
+.cnt sub {vertical-align: text-bottom;}
+.cnt sup {vertical-align: text-top;}
+
+// Table
+.cnt > table {width: 100%;}
+
+.cnt > table > caption,
+.cnt > table > thead > tr > th,
+.cnt > table tr > td {padding: 1rem 2rem;}
+
+.cnt > table > caption {
+  font-style: italic;
+  text-align: right;
+}
+.cnt > table > thead > tr > th,
+.cnt > table > tbody > tr > td {border-bottom: 1px solid #ccc;}
+.cnt > table > thead > tr > th {
+  background: #ddd;
+  text-align: left;
+}
+.cnt > table > tfoot > tr > td {
+  background: #eee;
+}

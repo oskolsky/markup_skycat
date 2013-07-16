@@ -1,0 +1,50 @@
+// PLATINUM LINKS
+
+// LINKS
+// ----------------------------------------------------------------------------------------------------
+.a.__inner {text-decoration: none;}
+.a.__inner > img,
+.a.__inner > span {display: inline-block;} 
+.a.__inner > img  {
+  margin-top: -.1em;
+  vertical-align: middle;
+}
+
+// none/none
+// a, a:hover {text-decoration: none;}
+
+// underline/underline
+// a, a:hover,
+// .a.__inner > span {text-decoration: underline;}
+// .a.__inner:hover {text-decoration: none;}
+
+// underline/none
+a, .a.__inner > span {text-decoration: underline;}
+a:hover, .a.__inner:hover > span {text-decoration: none;}
+
+// none/underline
+// a, .a.__inner:hover {text-decoration: none;}
+// a:hover, .a.__inner:hover > span {text-decoration: underline;}
+
+// PSEUDOLINKS
+// ----------------------------------------------------------------------------------------------------
+.a.__pseudo {line-height: .95;}
+.a.__pseudo,
+.a.__pseudo:hover,
+.a.__pseudo.__inner > span {text-decoration: none;}
+
+// underline/underline
+.a.__pseudo,
+.a.__pseudo.__inner > span {border-bottom: .1em dotted @link-color;}
+.a.__pseudo:hover,
+.a.__pseudo.__inner:hover > span {border-bottom-color: @link-color-hover;}
+.a.__pseudo:active,
+.a.__pseudo.__inner:active > span {border-bottom-color: @link-color-active;}
+.a.__pseudo.__inner {border-bottom-color: transparent;}
+
+// underline/none
+// .a.__pseudo,
+// .a.__pseudo.__inner > span {border-bottom: .1em dotted @link-color;}
+// .a.__pseudo.__inner,
+// .a.__pseudo:hover,
+// .a.__pseudo.__inner:hover > span {border-bottom-color: transparent;}

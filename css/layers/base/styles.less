@@ -1,0 +1,60 @@
+html {height: 100%;}
+
+button, input, select, textarea, th, td {
+  .border-box;
+}
+
+main {display: block;}
+
+// PROPERTIES
+// ----------------------------------------------------------------------------------------------------
+// Display
+.d-n  {display: none;}
+.d-i  {display: inline;}
+.d-b  {display: block;}
+.d-ib {display: inline-block;}
+
+// Float
+.f-l {float: left;}
+.f-r {float: right;}
+
+// Overflow
+.o-h  {overflow: hidden;}
+.ox-h {
+  -ms-overflow-x: hidden;
+      overflow-x: hidden;
+}
+.oy-h {
+  -ms-overflow-y: hidden;
+      overflow-y: hidden;
+}
+
+// Position
+.p-a {position: absolute;}
+.p-r {position: relative;}
+.p-f {position: fixed;}
+.p-s {position: static;}
+
+// Visibility
+.hidden  {visibility: hidden;}
+.visible {visibility: visible;}
+
+// White-space
+.nowrap {white-space: nowrap;}
+
+// HELPERS
+// ----------------------------------------------------------------------------------------------------
+// Clearfix
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:after {clear: both;}
+
+// Centering block
+.block-c {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
