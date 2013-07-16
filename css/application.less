@@ -5,16 +5,16 @@
 // VARIABLES
 @base-bg: #fff;
 @base-color: #000;
-@base-font-size: 1.5rem;
-@base-line-height: 1.5;
-@base-font-family: "PT Sans", Helvetica, Arial, sans-serif;
+@base-font-size: 1.4rem;
+@base-line-height: 2rem;
+@base-font-family: Helvetica, Arial, sans-serif;
 
 // Headers
-@header-font-family: "PT Serif", Times, "Times New Roman", serif;
+@header-font-family: Helvetica, Arial, sans-serif;
 
 // Links
-@link-color: #0000cd;
-@link-color-hover: #ccc;
+@link-color: #fff;
+@link-color-hover: #fff;
 @link-color-active: darken(@link-color-hover, 10%);
 
 // Text
@@ -41,7 +41,7 @@
           box-sizing: border-box;
 }
 
-.translate (@x; @y) {
+.translate (@x, @y) {
   -webkit-transform: translate(@x, @y);
      -moz-transform: translate(@x, @y);
       -ms-transform: translate(@x, @y);
@@ -51,12 +51,6 @@
 
 // Forms
 .form-el-border-radius (@radius: .2em) {border-radius: @radius;}
-
-// FONTS
-// http://www.google.com/webfonts
-// ----------------------------------------------------------------------------------------------------
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic);
 
 // IMPORT
 // ----------------------------------------------------------------------------------------------------
