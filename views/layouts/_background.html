@@ -1,6 +1,59 @@
-<div class="background-img"><img src="/img/bg.jpg" alt="" width="2560" height="1600"></div>
+<div class="parallax">
+  <div class="parallax_layer __1"></div>
+  <div class="parallax_layer __2"></div>
+</div>
+
+
 <script type="text/javascript">
   $(function() {
-    $('.background-img').fullscreenBackground({fillOnResize: true});
+
+    $(window).load(function() {
+
+      $('.paralax').parallax({
+        'elements': [
+          {
+            'selector': '.paralax',
+            'properties': {
+              'x': {
+                'background-position-x': {
+                  'initial': 50,
+                  'multiplier': 0.02,
+                  'unit': '%'
+                }
+              }
+            }
+          },
+          {
+            'selector': '.parallax_layer.__1',
+            'properties': {
+              'x': {
+                'background-position-x': {
+                  'initial': 50,
+                  'multiplier': 0.005,
+                  'unit': '%'
+                }
+              }
+            }
+          },
+          {
+            'selector': '.parallax_layer.__2',
+            'properties': {
+              'x': {
+                'background-position-x': {
+                  'initial': 50,
+                  'multiplier': 0.02,
+                  'unit': '%'
+                }
+              }
+            }
+          }
+        ]
+      });
+
+
+    });
+
+//    $('.background-img').fullscreenBackground({fillOnResize: true});
+
   });
 </script>

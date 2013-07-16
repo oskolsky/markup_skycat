@@ -1,8 +1,22 @@
-// BACKGROUND
+// PARALLAX
 // ----------------------------------------------------------------------------------------------------
-.background-img {
-  z-index: -1 !important;
+.parallax {
+  background: url("/img/parallax/layer-main.jpg") center no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
+.parallax_layer {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.parallax_layer.__1 {background: url("/img/parallax/layer-1.png") center no-repeat;}
+.parallax_layer.__2 {background: url("/img/parallax/layer-2.png") center no-repeat;}
 
 // HEADER
 // ----------------------------------------------------------------------------------------------------
