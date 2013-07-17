@@ -18,27 +18,37 @@
             <form class="form" action="">
 
               <div class="form_row">
-                <label data-required="after">Your name</label>
+                <label class="form_label" data-required="after">Your name</label>
                 <input type="text" class="form_text form_el __block" required>
               </div>
 
               <div class="form_row">
-                <label data-required="after">Your e-mail address</label>
+                <label class="form_label" data-required="after">Your e-mail address</label>
                 <input type="email" class="form_text form_el __block" required>
               </div>
 
               <div class="form_row">
-                <label data-required="after">Inquiry type</label>
+                <label class="form_label" data-required="after">Inquiry type</label>
+                <div class="form_select form_el __fake grid-4">
+                  <p>&nbsp;</p>
+                  <select class="form_select form_el __real" required>
+                    <option selected>Please, select one</option>
+                    <option>Bug report/Technical Issue</option>
+                    <option>Sms-veriffication Issue</option>
+                    <option>Press/Media request</option>
+                    <option>Partnership</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form_row">
+                <label class="form_label" data-required="after">Subject</label>
                 <input type="text" class="form_text form_el __block" required>
               </div>
 
               <div class="form_row">
-                <label data-required="after">Subject</label>
-                <input type="text" class="form_text form_el __block" required>
-              </div>
-
-              <div class="form_row">
-                <label data-required="after">Message</label>
+                <label class="form_label" data-required="after">Message</label>
                 <textarea name="" rows="10" class="form_textarea form_el __block" required></textarea>
               </div>
 

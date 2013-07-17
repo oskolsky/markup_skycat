@@ -16,7 +16,7 @@
   // <INPUT TYPE="RESET">,
   // <INPUT TYPE="SUBMIT">
   .form_button {
-    padding: .3rem .9rem;
+    padding: 1rem;
     background: rgb(238,238,238);
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRkZGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
     background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(221,221,221,1) 100%);
@@ -47,7 +47,7 @@
   // <INPUT TYPE="TEXT">,
   // <INPUT TYPE="PASSWORD">
   .form_text {
-    padding: .3rem .6rem;
+    padding: 1rem;
     background: @form-el-bg;
     border: @form-el-border-style;
     .form-el-border-radius;
@@ -183,8 +183,10 @@
   // <LABEL></LABEL>
   .form_label {
     color: @form-label-color;
+    display: block;
     font-size: @form-label-font-size;
     line-height: @form-label-line-height;
+    margin-bottom: 0.5rem;
   }
 
   // <SELECT>
@@ -192,7 +194,7 @@
     position: relative;
     z-index: 1000;
     display: inline-block;
-    padding: .3rem .6rem;
+    padding: 1rem;
     background: @form-el-bg;
     border: @form-el-border-style;
     .form-el-border-radius;
@@ -207,9 +209,9 @@
     top: 50%;
     right: .3rem;
     z-index: 1001;
-    width: 1.9rem;
-    height: 2rem;
-    margin-top: -1rem;
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-top: -1.7rem;
     content: "";
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAYAAAARx7TFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTRCMEJFODc4RDUyMTFFMjk0MzU4M0MyNjQ2OTg2RDIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTRCMEJFODg4RDUyMTFFMjk0MzU4M0MyNjQ2OTg2RDIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1NEIwQkU4NThENTIxMUUyOTQzNTgzQzI2NDY5ODZEMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1NEIwQkU4NjhENTIxMUUyOTQzNTgzQzI2NDY5ODZEMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgWRdWoAAAB4SURBVHjaYly+fPl/BiCIiIhYAKQSGRBg/ooVKxJADGZVVdWGJUuWMPDx8Rno6OgoAMU2whT09PQwcHNzMzD8////dkVFxX9jY+P/IFOB4D6IBvFB4iB5kCIHZIVeXl4oCkDyIEUs6AqRFYDkQYowFCIrAMkDBBgA32Z51e20vVYAAAAASUVORK5CYII=) #eee center no-repeat;
     border: @form-el-border-style;
@@ -241,7 +243,7 @@
   
   // <TEXTAREA></TEXTAREA>
   .form_textarea {
-    padding: .3rem .6rem;
+    padding: 1rem;
     border: @form-el-border-style;
     .form-el-border-radius;
     color: @form-el-color;
