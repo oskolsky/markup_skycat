@@ -1,3 +1,11 @@
 <footer id="footer" class="footer" role="contentinfo">
   <!--#include virtual="/views/layouts/_nav.html" -->
 </footer>
+<script type="text/javascript">
+  $(function() {
+    $.stickyFooter(0);
+    $(window).smartresize(function() {
+      $.stickyFooter(0);
+    });
+  })
+</script>

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="ru-RU" class="no-js">
   <head>
-    <title>Contacts / SkyCat</title>
+    <title>Contact us / SkyCat</title>
     <!--#include virtual="/views/layouts/_head.html" -->
   </head>
   <body class="page __inside">
@@ -14,7 +14,39 @@
         <div class="ctn">
           <article class="cnt cnt-block">
             <a href="/"><img src="/img/logo.png" alt="SkyCat" class="logo __inside"></a>
-            <h1>Contacts</h1>
+            <h1>Contact us</h1>
+            <form class="form" action="">
+
+              <div class="form_row">
+                <label data-required="after">Your name</label>
+                <input type="text" class="form_text form_el __block" required>
+              </div>
+
+              <div class="form_row">
+                <label data-required="after">Your e-mail address</label>
+                <input type="email" class="form_text form_el __block" required>
+              </div>
+
+              <div class="form_row">
+                <label data-required="after">Inquiry type</label>
+                <input type="text" class="form_text form_el __block" required>
+              </div>
+
+              <div class="form_row">
+                <label data-required="after">Subject</label>
+                <input type="text" class="form_text form_el __block" required>
+              </div>
+
+              <div class="form_row">
+                <label data-required="after">Message</label>
+                <textarea name="" rows="10" class="form_textarea form_el __block" required></textarea>
+              </div>
+
+              <div class="form_row">
+                <input type="submit" class="form_button" value="Send">
+              </div>
+
+            </form>
           </article>
         </div>
       </section>
