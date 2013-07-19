@@ -58,7 +58,7 @@
         $('#feedback-submit').click(function() {
           $.ajax({
             type: 'POST',
-            url:  '/mail1.php',
+            url:  '/mail.php',
             data: $('#feedback').serialize(),
             success: function(response) {
               $.arcticmodal({
