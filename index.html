@@ -11,10 +11,37 @@
     <main id="main" class="main" role="main">
       <section role="region" aria-label="">
         <div class="ctn">
-
+          <div class="grid-3 prefix-9 promo">
+            <div class="iphone">
+              <img src="/img/iphone.png" alt="" class="iphone_img">
+              <!--<img src="/img/screen.png" alt="" class="iphone_screen">-->
+              <a href="#" data-dialog="video"><img src="/img/play.png" alt="" class="iphone_video" width="92" height="92"></a>
+            </div>
+            <a href="#" class="app"><img src="/img/download.png" alt="" class="app_btn"></a>
+          </div>
         </div>
       </section>
     </main>
     <!--#include virtual="/views/layouts/_footer.html" -->
+    <script type="text/javascript">
+      $(function() {
+        $(window).load(function() {promo();});
+        $(window).smartresize(function() {promo();});
+      });
+      function promo() {
+        var
+          windowH = $(window).outerHeight() - $('.footer').outerHeight(),
+          promoH = $('.promo').outerHeight(),
+          top = (windowH - promoH) / 2;
+        if (top >= 0) {
+          $('.promo').css({
+            position: 'relative',
+            top: top + 'px'
+          });
+        } else {
+          $('.promo').removeAttr('style');
+        }
+      }
+    </script>
   </body>
 </html>
