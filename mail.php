@@ -14,7 +14,6 @@
     $mail -> Body('Name: '.$data['name']."\n".'E-mail: '.$data['email']."\n".'Inquiry: '.$data['inquiry']."\n".'Message: '.$data['message']);
     $mail -> Priority(3);
     $mail -> Send();
-    echo "Показывает исходный текст письма:<br><pre>", $mail -> Get(), "</pre>";
   }
 
 ?>

@@ -15,18 +15,15 @@
           <article class="cnt cnt-block">
             <a href="/"><img src="/img/logo.png" alt="SkyCat" class="logo __inside"></a>
             <h1>Contact us</h1>
-            <form class="form" method="post" action="/mail.php">
-
+            <form id="feedback" class="form">
               <div class="form_row">
                 <label class="form_label" data-required="after">Your name</label>
                 <input type="text" class="form_text form_el __block" name="data[name]" autofocus="true" required>
               </div>
-
               <div class="form_row">
                 <label class="form_label" data-required="after">Your e-mail address</label>
                 <input type="email" class="form_text form_el __block" name="data[email]" required>
               </div>
-
               <div class="form_row">
                 <label class="form_label" data-required="after">Inquiry type</label>
                 <div class="form_select form_el __fake grid-4">
@@ -41,24 +38,45 @@
                   </select>
                 </div>
               </div>
-
               <div class="form_row">
                 <label class="form_label" data-required="after">Subject</label>
                 <input type="text" class="form_text form_el __block" name="data[subject]" required>
               </div>
-
               <div class="form_row">
                 <label class="form_label" data-required="after">Message</label>
                 <textarea rows="10" class="form_textarea form_el __block" name="data[message]" required></textarea>
               </div>
-
               <input type="hidden" name="send">
-              <input type="submit" class="form_button" value="Send">
-
+              <a href="#" id="feedback-submit"  class="form_button">Send</a>
             </form>
           </article>
         </div>
       </section>
     </main>
+    <script type="text/javascript">
+      $(function() {
+        $('#feedback-submit').click(function() {
+          $.ajax({
+            type: 'POST',
+            url:  '/mail.php',
+            data: $('#feedback').serialize(),
+            success: function(response) {
+              $.arcticmodal({
+                type: 'ajax',
+                url: '/views/dialogs/_send_success.html'
+              });
+              $('#feedback')[0].reset();
+            },
+            error: function() {
+              $.arcticmodal({
+                type: 'ajax',
+                url: '/views/dialogs/_send_error.html'
+              });
+            }
+          });
+          return false;
+        });
+      });
+    </script>
   </body>
 </html>
