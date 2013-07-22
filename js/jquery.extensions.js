@@ -51,9 +51,8 @@
   // CHECK IF IOS
   // $(el).iOSCheck(className);
   // ----------------------------------------------------------------------------------------------------
-  $.fn.iOSCheck = function(className) {
-    if (!!navigator.userAgent.match(/(iPad|iPhone|iPod)/i)) this.addClass(className);
-    return this;
+  $.isiOSCheck = function() {
+    return !!navigator.userAgent.match(/(iPad|iPhone|iPod)/i);
   };
 
 })(jQuery);

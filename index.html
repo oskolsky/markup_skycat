@@ -14,11 +14,12 @@
           <!--<h1><a href="/"><img src="/img/logo.png" alt="SkyCat" class="logo __index" width="334"></a></h1>-->
           <div class="grid-3 prefix-9 promo">
             <div class="iphone">
-              <img src="/img/iphone.png" alt="" class="iphone_img">
-              <!--<img src="/img/screen.png" alt="" class="iphone_screen">-->
-              <a href="#" data-dialog="video"><img src="/img/play.png" alt="" class="iphone_video" width="92" height="92"></a>
+              <img src="/img/iphone.png" alt="" class="iphone_img" width="100%">
+              <img src="/img/screen.png" alt="" class="iphone_screen" width="100%">
+              <a href="#" data-dialog="video" class="hidden-phone hidden-tablet"><img src="/img/play.png" alt="" class="iphone_video" width="92" height="92"></a>
+              <a href="//www.youtube.com/embed/3OJ5NaQhp4I?rel=0" class="hidden-desktop" rel="nofollow"><img src="/img/play.png" alt="" class="iphone_video" width="92" height="92"></a>
             </div>
-            <a href="#" class="app"><img src="/img/download.png" alt="" class="app_btn"></a>
+            <a href="#" class="app"><img src="/img/comming-soon.png" alt="" class="app_btn"></a>
           </div>
         </div>
       </section>
@@ -28,7 +29,7 @@
     <script type="text/javascript">
       $(function() {
         $(window).load(function() {promo();});
-        $(window).smartresize(function() {promo();});
+        $(window).resize(function() {promo();});
       });
       function promo() {
         var
