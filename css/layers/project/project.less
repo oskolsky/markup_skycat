@@ -1,39 +1,25 @@
-// PARALLAX
-// ----------------------------------------------------------------------------------------------------
-.parallax {
-  background: url("/img/parallax/layer-stars.jpg") center no-repeat;
-  background-size: cover;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-.parallax_layer {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.parallax_layer.__1 {background: url("/img/parallax/layer-1.png") center no-repeat;}
-.parallax_layer.__2 {background: url("/img/parallax/layer-2.png") center no-repeat;}
-
-.background-image {
-  z-index: -1 !important;
-}
-
 // PAGE
 // ----------------------------------------------------------------------------------------------------
 .page {
-
+  background-color: @base-bg;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .page.__index {
-//  background: url("/img/parallax/layer-main.jpg") center no-repeat;
-//  background-size: cover;
+  background-image:
+    url("/img/parallax/layer-logo.png"),
+    url("/img/parallax/layer-front.png"),
+    url("/img/parallax/layer-back.png"),
+    url("/img/parallax/layer-stars.png"),
+    url("/img/parallax/layer-main.jpg");
 }
 .page.__inside {
-//  background: url("/img/parallax/layer-main.jpg") center no-repeat;
-//  background-size: cover;
+  background-image:
+    url("/img/parallax/layer-inside.png"),
+    url("/img/parallax/layer-stars.png"),
+    url("/img/parallax/layer-main.jpg");
 }
 .page.__inside .main {
   padding-bottom: 4rem;
