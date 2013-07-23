@@ -1,29 +1,51 @@
-// PAGE
+//// PAGE
+//// ----------------------------------------------------------------------------------------------------
+//.page {
+//  background-color: @base-bg;
+//  background-position: center top;
+//  background-repeat: no-repeat;
+//  background-attachment: fixed;
+//  background-size: cover;
+//}
+//.page.__index {
+//  background-image:
+//    url("/img/parallax/layer-logo.png"),
+//    url("/img/parallax/layer-front.png"),
+//    url("/img/parallax/layer-back.png"),
+//    url("/img/parallax/layer-stars.png"),
+//    url("/img/parallax/layer-main.jpg");
+//}
+//.page.__inside {
+//  background-image:
+//    url("/img/parallax/layer-inside.png"),
+//    url("/img/parallax/layer-stars.png"),
+//    url("/img/parallax/layer-main.jpg");
+//}
+//.page.__inside .main {
+//  padding-bottom: 4rem;
+//}
+
+// PARALAX
 // ----------------------------------------------------------------------------------------------------
-.page {
-  background-color: @base-bg;
+.parallax, .parallax_layer {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.parallax_layer {
+  background-color: transparent;
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-.page.__index {
-  background-image:
-    url("/img/parallax/layer-logo.png"),
-    url("/img/parallax/layer-front.png"),
-    url("/img/parallax/layer-back.png"),
-    url("/img/parallax/layer-stars.png"),
-    url("/img/parallax/layer-main.jpg");
-}
-.page.__inside {
-  background-image:
-    url("/img/parallax/layer-inside.png"),
-    url("/img/parallax/layer-stars.png"),
-    url("/img/parallax/layer-main.jpg");
-}
-.page.__inside .main {
-  padding-bottom: 4rem;
-}
+.parallax_layer.__stars {background-image: url("/img/parallax/layer-stars.png");}
+.parallax_layer.__back  {background-image: url("/img/parallax/layer-back.png");}
+.parallax_layer.__front {background-image: url("/img/parallax/layer-front.png");}
+.parallax_layer.__logo  {background-image: url("/img/parallax/layer-logo.png");}
 
 // HEADER
 // ----------------------------------------------------------------------------------------------------

@@ -1,0 +1,91 @@
+<div class="parallax">
+  <div class="parallax_layer __stars"></div>
+  <div class="parallax_layer __back"></div>
+  <div class="parallax_layer __front"></div>
+  <div class="parallax_layer __logo"></div>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    $('parallax').parallax({
+      'elements': [
+        {
+          'selector': '.parallax_layer.__stars',
+          'properties': {
+            'x': {
+              'background-position-x': {
+                'initial': 0,
+                'multiplier': 0.01,
+                'invert': true
+              }
+            },
+            'y': {
+              'background-position-y': {
+                'initial': 0,
+                'multiplier': 0.001,
+                'invert': true
+              }
+            }
+          }
+        },
+        {
+          'selector': '.parallax_layer.__back',
+          'properties': {
+            'x': {
+              'background-position-x': {
+                'initial': 0,
+                'multiplier': 0.007,
+                'invert': true
+              }
+            },
+            'y': {
+              'background-position-y': {
+                'initial': 0,
+                'multiplier': 0.007,
+                'invert': true
+              }
+            }
+          }
+        },
+        {
+          'selector': '.parallax_layer.__front',
+          'properties': {
+            'x': {
+              'background-position-x': {
+                'initial': 0,
+                'multiplier': 0.007,
+                'invert': false
+              }
+            },
+            'y': {
+              'background-position-y': {
+                'initial': 0,
+                'multiplier': 0.007,
+                'invert': false
+              }
+            }
+          }
+        },
+        {
+          'selector': '.parallax_layer.__logo',
+          'properties': {
+            'x': {
+              'background-position-x': {
+                'initial': 0,
+                'multiplier': 0.007,
+                'invert': false
+              }
+            },
+            'y': {
+              'background-position-y': {
+                'initial': 0,
+                'multiplier': 0.002,
+                'invert': false
+              }
+            }
+          }
+        }
+      ]
+    });
+  });
+</script>
