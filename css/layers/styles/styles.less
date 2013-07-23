@@ -5,7 +5,10 @@ html {
 }
 
 body {
-  background: @base-bg url("/img/parallax/layer-main.jpg") center no-repeat;
+  background-color: @base-bg;
+  background-image: url("/img/parallax/layer-logo.png"), url("/img/parallax/layer-front.png"), url("/img/parallax/layer-back.png"), url("/img/parallax/layer-stars.png"), url("/img/parallax/layer-main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: @base-color;
