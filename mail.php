@@ -9,7 +9,7 @@
     include_once ('lib/mail.class.php');
     $mail = new mail('utf-8');
     $mail -> To($cc);
-
+    $mail -> Cc($to);
     $mail -> Subject('Feedback from the site sky-cat.info: "'.$data['subject'].'"');
     $mail -> Body('Name: '.$data['name']."\n".'E-mail: '.$data['email']."\n".'Inquiry: '.$data['inquiry']."\n".'Message: '.$data['message']);
     $mail -> Priority(3);
