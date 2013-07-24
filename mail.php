@@ -14,6 +14,7 @@
     $mail -> Body('Name: '.$data['name']."\n".'E-mail: '.$data['email']."\n".'Inquiry: '.$data['inquiry']."\n".'Message: '.$data['message']);
     $mail -> Priority(3);
     $mail -> Send();
+    echo $mail -> Get();
   }
 
 ?>
