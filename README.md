@@ -1,4 +1,4 @@
-# Cantata
+# SkyCat
 
 Version: 1.0
 
