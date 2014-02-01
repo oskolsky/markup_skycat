@@ -1,10 +1,9 @@
-SkyCat
-========
+# Cantata
 
-Верстка проекта "SkyCat"
+Version: 1.0
 
-| Страница                      | Ссылка                                         |
-|-------------------------------|------------------------------------------------|
-| Главная                       | http://skycat.oskolsky.com/index.html          |
-| О нас                         | http://skycat.oskolsky.com/about.html          |
-| Условия                       | http://skycat.oskolsky.com/terms.html          |
+Updated: 1/02/2014
+
+## Credits
+
+* @oskolsky — Senior Frontend Developer
